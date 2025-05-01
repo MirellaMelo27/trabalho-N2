@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Condicionais em C</title>
+</head>
+<body>
+    <header>
+        <h1>Aprenda<span>C</span></h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../modulos/1-logica.html">Lógica</a></li>
+                <li><a href="../modulos/2-introducao-c.html">Introdução C</a></li>
+                <li><a href="../modulos/3-tipos-dados.html">Tipo de Dados</a></li>
+                <li><a href="../modulos/4-operadores.html">Operadores</a></li>
+                <li><a href="../modulos/5-condicionais.html" class="ativo">Condicionais</a></li>
+                <li><a href="../modulos/6-repeticao.html">Repetição</a></li>
+                <li><a href="../modulos/7-entrada-saida.html">Entrada/Saída</a></li>
+                <li><a href="../sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+            <h2 class="section-title">Estruturas Condicionais em C</h2>
+            <p>As estruturas condicionais permitem que um programa tome decisões com base em condições.</p>
+
+            <h3>if / else</h3>
+            <p>Usado para executar um bloco de código se uma condição for verdadeira.</p>
+            <pre><code>int idade = 18;
+if (idade >= 18) {
+    printf("Maior de idade");
+} else {
+    printf("Menor de idade");
+}</code></pre>
+
+            <h3>else if</h3>
+            <p>Permite testar múltiplas condições.</p>
+            <pre><code>int nota = 85;
+if (nota >= 90) {
+    printf("Aprovado com excelência");
+} else if (nota >= 60) {
+    printf("Aprovado");
+} else {
+    printf("Reprovado");
+}</code></pre>
+
+            <h3>switch</h3>
+            <p>Útil para múltiplas escolhas baseadas no valor de uma variável.</p>
+            <pre><code>int dia = 3;
+switch (dia) {
+    case 1:
+        printf("Domingo");
+        break;
+    case 2:
+        printf("Segunda-feira");
+        break;
+    case 3:
+        printf("Terça-feira");
+        break;
+    default:
+        printf("Outro dia");
+}</code></pre>
+        </section>
+
+        <section class="content">
+            <h2 class="section-title">Exercícios</h2>
+        
+            <div class="exercise">
+                <h3>1. Qual é a função da estrutura condicional if-else?</h3>
+                <form id="question1">
+                    <input type="radio" name="q1" value="correct"> A estrutura if-else é usada para tomar decisões com base em condições específicas.<br>
+                    <input type="radio" name="q1" value="wrong"> Ela serve para repetir instruções várias vezes.<br>
+                    <input type="radio" name="q1" value="wrong"> Ela apenas imprime informações na tela.<br><br>
+                    <button type="button" onclick="checkAnswer('question1')">Verificar</button>
+                    <p id="feedback1"></p>
+                </form>
+            </div>
+        
+            <div class="exercise">
+                <h3>2. Qual é a diferença entre a estrutura condicional if e a estrutura condicional switch?</h3>
+                <form id="question2">
+                    <input type="radio" name="q2" value="correct"> O if toma decisões com base em condições; o switch toma decisões com base em valores específicos.<br>
+                    <input type="radio" name="q2" value="wrong"> Ambos funcionam da mesma forma.<br>
+                    <input type="radio" name="q2" value="wrong"> O switch é mais utilizado que o if em qualquer situação.<br><br>
+                    <button type="button" onclick="checkAnswer('question2')">Verificar</button>
+                    <p id="feedback2"></p>
+                </form>
+            </div>
+        
+            <h3>Desafios de Programação:</h3>
+            <ul>
+                <li>🛠️ Escreva um programa que use <code>if-else</code> para verificar se um número é par ou ímpar.<br>(Dica: use o operador <code>%</code> para saber se o resto da divisão por 2 é 0.)</li>
+                <li>🛠️ Escreva um programa que use <code>switch</code> para verificar o dia da semana.<br>(Dica: use números de 1 a 7 para representar os dias.)</li>
+            </ul>
+        </section>
+        
+    </main>
+
+    <hr>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Curso gratuito desenvolvido por estudantes de Engenharia de Software para a comunidade.</p>
+            <div class="footer-info">
+                <p>© 2025 Aprenda C - Projeto Extensionista</p>
+                <div class="footer-links">
+                    <a href="../sobre.html">Sobre</a>
+                    <a href="../modulos.html">Módulos</a>
+                    <a href="../contato.html">Contato</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

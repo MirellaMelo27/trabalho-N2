@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Entrada e Saída de Dados em C</title>
+</head>
+<body>
+    <header>
+        <h1>Aprenda<span>C</span></h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../modulos/1-logica.html">Lógica</a></li>
+                <li><a href="../modulos/2-introducao-c.html">Introdução C</a></li>
+                <li><a href="../modulos/3-tipos-dados.html">Tipo de Dados</a></li>
+                <li><a href="../modulos/4-operadores.html">Operadores</a></li>
+                <li><a href="../modulos/5-condicionais.html">Condicionais</a></li>
+                <li><a href="../modulos/6-repeticao.html">Repetição</a></li>
+                <li><a href="../modulos/7-entrada-saida.html" class="ativo">Entrada/Saída</a></li>
+                <li><a href="../sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+            <h2 class="section-title">Entrada e Saída de Dados em C</h2>
+
+            <h3>printf – saída de dados</h3>
+            <p>Usada para exibir informações na tela.</p>
+            <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    printf("Olá, mundo!\n");
+    return 0;
+}</code></pre>
+
+            <p>Você pode usar especificadores de formato para imprimir diferentes tipos de dados:</p>
+            <ul>
+                <li><code>%i</code> - Inteiros</li>
+                <li><code>%f</code> - Decimais</li>
+                <li><code>%c</code> - Caractere</li>
+                <li><code>%s</code> - String</li>
+            </ul>
+
+            <p>Exemplo:</p>
+            <pre><code>int idade = 20;
+float altura = 1.75;
+char letra = 'A';
+
+printf("Idade: %i, Altura: %.2f, Letra: %c\n", idade, altura, letra);</code></pre>
+
+            <h3>scanf – entrada de dados</h3>
+            <p>Usada para ler informações do usuário.</p>
+            <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    int idade;
+    printf("Digite sua idade: ");
+    scanf("%i", &amp;idade);
+    printf("Você tem %i anos.\n", idade);
+    return 0;
+}</code></pre>
+
+            <h4>O que significa o símbolo <code>&</code> no scanf?</h4>
+            <p>O <code>&</code> indica o endereço da variável na memória, permitindo que o valor lido seja armazenado corretamente.</p>
+
+            <h3>Resumo dos especificadores:</h3>
+            <ul>
+                <li><code>%i</code> - Inteiros (<code>printf("%i", 10);</code>)</li>
+                <li><code>%f</code> - Float/Double (<code>printf("%.2f", 3.1415);</code>)</li>
+                <li><code>%c</code> - Caractere (<code>printf("%c", 'A');</code>)</li>
+                <li><code>%s</code> - String (<code>printf("%s", "Oi");</code>)</li>
+            </ul>
+        </section>
+
+        <section class="content">
+            <h2 class="section-title">Exercícios</h2>
+        
+            <div class="exercise">
+                <h3>1. Qual é a função da função <code>scanf</code> em C?</h3>
+                <form id="question1">
+                    <input type="radio" name="q1" value="correct"> Ler dados do usuário e armazená-los em variáveis.<br>
+                    <input type="radio" name="q1" value="wrong"> Exibir dados na tela.<br>
+                    <input type="radio" name="q1" value="wrong"> Encerrar o programa.<br><br>
+                    <button type="button" onclick="checkAnswer('question1')">Verificar</button>
+                    <p id="feedback1"></p>
+                </form>
+            </div>
+        
+            <div class="exercise">
+                <h3>2. Qual é a função da função <code>printf</code> em C?</h3>
+                <form id="question2">
+                    <input type="radio" name="q2" value="correct"> Exibir informações na tela.<br>
+                    <input type="radio" name="q2" value="wrong"> Ler informações do teclado.<br>
+                    <input type="radio" name="q2" value="wrong"> Realizar operações matemáticas.<br><br>
+                    <button type="button" onclick="checkAnswer('question2')">Verificar</button>
+                    <p id="feedback2"></p>
+                </form>
+            </div>
+        
+            <h3>Desafios de Programação:</h3>
+            <ul>
+                <li>🛠️ Escreva um programa que peça ao usuário para digitar um número e, em seguida, exiba o número digitado.<br>(Dica: use <code>scanf</code> para ler e <code>printf</code> para mostrar o valor.)</li>
+                <li>🛠️ Escreva um programa que leia dois números e imprima a soma deles.<br>(Dica: leia dois valores com <code>scanf</code> e depois utilize <code>printf</code> para exibir a soma.)</li>
+            </ul>
+        </section>
+        
+    </main>
+
+    <hr>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Curso gratuito desenvolvido por estudantes de Engenharia de Software para a comunidade.</p>
+            <div class="footer-info">
+                <p>© 2025 Aprenda C - Projeto Extensionista</p>
+                <div class="footer-links">
+                    <a href="../sobre.html">Sobre</a>
+                    <a href="../modulos.html">Módulos</a>
+                    <a href="../contato.html">Contato</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

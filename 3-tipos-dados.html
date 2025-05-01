@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Curso gratuito de programação em C. Aprenda lógica, algoritmos e fundamentos da linguagem C de forma prática e simples.">
+    
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <title>AprendaC</title>
+</head>
+<body>
+    <header>
+        <h1>Aprenda<span>C</span></h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../modulos/1-logica.html">Lógica</a></li>
+                <li><a href="../modulos/2-introducao-c.html">Introdução C</a></li>
+                <li><a href="../modulos/3-tipos-dados.html" class="ativo">Tipo de Dados</a></li>
+                <li><a href="../modulos/4-operadores.html">Operadores</a></li>
+                <li><a href="../modulos/5-condicionais.html">Condicionais</a></li>
+                <li><a href="../modulos/6-repeticao.html">Repetição</a></li>
+                <li><a href="../modulos/7-entrada-saida.html">Entrada/Saída</a></li>
+                <li><a href="../sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+            <h2 class="section-title">Tipos de Dados e Variáveis</h2>
+            <p>Tipos de dados definem o tipo de valor que uma variável pode armazenar, como números inteiros, números decimais, caracteres, entre outros. Eles são fundamentais para garantir que as operações realizadas pelo programa sejam corretas e eficientes.</p> 
+            <p>Ao definir corretamente o tipo de dado, evitamos erros e otimizamos o uso da memória.</p>
+        </section>
+
+        <section class="content">
+            <h2 class="section-title">Tipos Primitivos em C</h2>
+    
+            <h3>Inteiro (<code>int</code>)</h3>
+            <p>Armazena números inteiros positivos ou negativos, sem casas decimais.</p>
+            <pre><code>int a = 10;</code></pre>
+    
+            <h3>Ponto Flutuante (<code>float</code>)</h3>
+            <p>Armazena números com casas decimais, mas com menor precisão.</p>
+            <pre><code>float b = 3.14;</code></pre>
+    
+            <h3>Dupla Precisão (<code>double</code>)</h3>
+            <p>Similar ao float, mas com maior precisão e capacidade.</p>
+            <pre><code>double c = 3.1415926535;</code></pre>
+    
+            <h3>Caractere (<code>char</code>)</h3>
+            <p>Armazena um único caractere.</p>
+            <pre><code>char d = 'A';</code></pre>
+        </section>
+        
+        <section class="content">
+            <h2 class="section-title">Declaração vs. Inicialização</h2>
+    
+            <h3>Declaração</h3>
+            <p>Apenas informa ao compilador que existe uma variável de certo tipo.</p>
+            <pre><code>int x;</code></pre>
+    
+            <h3>Inicialização</h3>
+            <p>Atribui um valor inicial à variável no momento da declaração.</p>
+            <pre><code>int x = 5;</code></pre>
+        </section>
+        
+        <section class="content">
+            <h2 class="section-title">Constantes</h2>
+    
+            <p>São valores que não mudam durante a execução do programa.</p>
+    
+            <h3>Diretiva de pré-processador</h3>
+            <pre><code>#define TAMANHO 100</code></pre>
+    
+            <h3>Uso da palavra-chave <code>const</code></h3>
+            <pre><code>const int MAX = 100;</code></pre>
+        </section>
+        
+        <section class="content">
+            <h2 class="section-title">Regras de Nomenclatura para Variáveis</h2>
+    
+            <ul>
+                <li>Devem começar com uma letra ou underscore (<code>_</code>).</li>
+                <li>Não podem conter espaços, acentos ou caracteres especiais.</li>
+                <li>São case-sensitive (<code>idade</code> e <code>Idade</code> são variáveis diferentes).</li>
+                <li>Nomes devem ser descritivos: prefira <code>numeroAlunos</code> em vez de apenas <code>n</code>.</li>
+            </ul>
+        </section>
+
+        <section class="content">
+            <h2 class="section-title">Exercícios</h2>
+
+            <div class="exercise">
+                <h3>1. Qual é a diferença entre uma variável e uma constante?</h3>
+                <form id="question1">
+                    <input type="radio" name="q1" value="correct"> Variável pode ser alterada, constante não.<br>
+                    <input type="radio" name="q1" value="wrong"> Constante pode mudar, variável não.<br>
+                    <input type="radio" name="q1" value="wrong"> Ambas nunca mudam.<br><br>
+                    <button type="button" onclick="checkAnswer('question1')">Verificar</button>
+                    <p id="feedback1"></p>
+                </form>
+            </div>
+
+            <div class="exercise">
+                <h3>2. Quais são os principais tipos de dados em C?</h3>
+                <form id="question2">
+                    <input type="radio" name="q2" value="correct"> int, float, char e double.<br>
+                    <input type="radio" name="q2" value="wrong"> string, bool e list.<br>
+                    <input type="radio" name="q2" value="wrong"> real, integer, character e double precision.<br><br>
+                    <button type="button" onclick="checkAnswer('question2')">Verificar</button>
+                    <p id="feedback2"></p>
+                </form>
+            </div>
+
+            <h3>Desafios de Programação:</h3>
+            <ul>
+                <li>🛠️ Declare uma variável do tipo <code>int</code> e atribua o valor 10 a ela.</li>
+                <li>🛠️ Declare uma constante do tipo <code>float</code> e atribua o valor 3.14 a ela.</li>
+            </ul>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Curso gratuito desenvolvido por estudantes de Engenharia de Software para a comunidade.</p>
+            <div class="footer-info">
+                <p>© 2025 Aprenda C - Projeto Extensionista</p>
+                <div class="footer-links">
+                    <a href="sobre.html">Sobre</a>
+                    <a href="modulos.html">Módulos</a>
+                    <a href="contato.html">Contato</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- TODO: Inserir o script de verificação dos exercícios aqui -->
+</body>
+</html>
