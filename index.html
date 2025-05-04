@@ -8,9 +8,22 @@
     <title>AprendaC</title>
 </head>
 <body>
+    <!-- Menu Lateral -->
+    <div id="sidebar" class="sidebar">
+        <div class="close-btn" onclick="closeMenu()">×</div>
+        <a href="modulos/1-logica.html">Módulo 1 - Lógica</a>
+        <a href="modulos/2-introducao-c.html">Módulo 2 - Introdução ao C</a>
+        <a href="modulos/3-tipos-dados.html">Módulo 3 - Tipos de Dados</a>
+        <a href="modulos/4-operadores.html">Módulo 4 - Operadores</a>
+        <a href="modulos/5-condicionais.html">Módulo 5 - Condicionais</a>
+        <a href="modulos/6-repeticao.html">Módulo 6 - Repetição</a>
+        <a href="modulos/7-entrada-saida.html">Módulo 7 - Entrada e Saída</a>
+    </div>
+
+    <!-- Cabeçalho -->
     <header>
         <div class="container header-content">
-            <div class="logo">
+            <div class="logo" onclick="openMenu()">
                 <h1>Aprenda<span>C</span></h1>
             </div>
             <nav>
@@ -70,6 +83,7 @@
 
     <hr>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
             <p>Curso gratuito desenvolvido por estudantes de Engenharia de Software para a comunidade.</p>
@@ -77,11 +91,13 @@
                 <p>© 2025 Aprenda C - Projeto Extensionista</p>
                 <div class="footer-links">
                     <a href="sobre.html">Sobre</a>
-                    <a href="modulos.html">Módulos</a>
-                    <a href="contato.html">Contato</a>
+                    <!-- Alterado para abrir o menu lateral -->
+                    <a href="javascript:void(0);" onclick="openMenu()">Módulos</a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
