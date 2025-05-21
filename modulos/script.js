@@ -24,10 +24,10 @@ function checkAnswer(parameter) {
 
     if (valueBtnSelected=="correct") {
         paragraph.className="correct"
-        paragraph.textContent="CORRETO!"
+        paragraph.textContent="RESPOSTA CORRETA!"
     }
     else {
         paragraph.className="wrong"
-        paragraph.textContent="INCORRETO!"
+        paragraph.textContent="RESPOSTA INCORRETA!"
     }
 }
