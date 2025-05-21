@@ -19,7 +19,7 @@ body {
     background-color: #233669;
     color: #190f30;
     line-height: 1.5;
-    padding: 30px;
+    padding: 0px 7.5px 0px 7.5px;
     max-width: 970px;
     margin: 50px auto;
 }
@@ -27,7 +27,6 @@ body {
 /* Cabeçalho e navegação */
 header {
     text-align: center;
-    padding: 20px 0;
     margin-bottom: 30px;
 }
 
@@ -260,4 +259,14 @@ strong {
 em {
     color: #3182ce;
     font-style: italic;
+}
+
+.correct{
+    color: green;
+    padding: 20px 0;
+}
+
+.wrong{
+    color: red;
+    padding: 20px 0;
 }
