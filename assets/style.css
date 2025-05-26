@@ -286,3 +286,38 @@ em {
         max-width: 600px;
     }
 }
+
+/* Estilo visual para a legenda dos fluxogramas */
+dl {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+dt {
+    font-weight: 600;
+    color: #495057;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 3px;
+    display: inline-block;
+}
+
+dt:first-child {
+    margin-top: 0;
+}
+
+dd {
+    margin-left: 20px;
+    margin-bottom: 12px;
+    color: #6c757d;
+    font-size: 15px;
+    font-style: italic;
+    padding-left: 10px;
+    border-left: 3px solid #e9ecef;
+}
