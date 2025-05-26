@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -261,12 +260,29 @@ em {
     font-style: italic;
 }
 
-.correct{
+.correct {
     color: green;
     padding: 20px 0;
 }
 
-.wrong{
+.wrong {
     color: red;
     padding: 20px 0;
+}
+
+.fluxograma {
+    width: 400px;
+    max-width: 100%;   
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+/* Limita o tamanho da imagem em telas grandes */
+@media (min-width: 769px) {
+    .fluxograma {
+        max-width: 600px;
+    }
 }
