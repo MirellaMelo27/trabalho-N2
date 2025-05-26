@@ -33,9 +33,20 @@ function checkAnswer(parameter) {
 }
 const respostas = {
     1: {
-        verifica: ['for', 'scanf', 'printf', 'soma'],
-        resposta: `#include &lt;stdio.h&gt;<br><br>int main() {<br>&nbsp;&nbsp;&nbsp;&nbsp;int N, soma = 0;<br>&nbsp;&nbsp;&nbsp;&nbsp;scanf("%d", &N);<br>&nbsp;&nbsp;&nbsp;&nbsp;for(int i = 1; i <= N; i++) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;soma += i;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;printf("Soma: %d\\n", soma);<br>&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>}`
+        verifica: ['início', 'número', 'resto', 'divisão', 'par', 'ímpar', 'fim'],
+        resposta: `<strong>Algoritmo para verificar se um número é par ou ímpar:</strong><br><br>
+        1. Início<br>
+        2. Pedir para o usuário digitar um número<br>
+        3. Ler o número digitado<br>
+        4. Calcular o resto da divisão do número por 2<br>
+        5. Se o resto for igual a 0:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- Mostrar "O número é par"<br>
+        6. Senão:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- Mostrar "O número é ímpar"<br>
+        7. Fim<br><br>
+        <em>💡 Este é um algoritmo em linguagem natural que pode ser transformado em qualquer linguagem de programação!</em>`
     },
+
     2: {
         verifica: ['scanf', 'if', 'else', '%'],
         resposta: `#include &lt;stdio.h&gt;<br><br>int main() {<br>&nbsp;&nbsp;&nbsp;&nbsp;int numero;<br>&nbsp;&nbsp;&nbsp;&nbsp;scanf("%d", &numero);<br>&nbsp;&nbsp;&nbsp;&nbsp;if(numero % 2 == 0)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf("Par\\n");<br>&nbsp;&nbsp;&nbsp;&nbsp;else<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf("Ímpar\\n");<br>&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>}`
@@ -45,8 +56,8 @@ const respostas = {
         resposta: `#include &lt;stdio.h&gt;<br><br>int main() {<br>&nbsp;&nbsp;&nbsp;&nbsp;printf("Olá, Mundo!\\n");<br>&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>}`
     },
     4: {
-        verifica: ['scanf', 'printf', '*2', 'dobro'],
-        resposta: `#include &lt;stdio.h&gt;<br><br>int main() {<br>&nbsp;&nbsp;&nbsp;&nbsp;int numero;<br>&nbsp;&nbsp;&nbsp;&nbsp;scanf("%d", &numero);<br>&nbsp;&nbsp;&nbsp;&nbsp;printf("Dobro: %d\\n", numero * 2);<br>&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>}`
+        verifica: ['#include', 'stdio.h', 'printf', '//', 'main'],
+        resposta: `#include &lt;stdio.h&gt; // Inclui a biblioteca padrão para entrada e saída<br><br>int main() { // Função principal do programa<br>&nbsp;&nbsp;&nbsp;&nbsp;printf("Meu nome é João\\n"); // Imprime o nome na tela<br>&nbsp;&nbsp;&nbsp;&nbsp;return 0; // Indica que o programa terminou com sucesso<br>}`
     },
     5: {
         verifica: ['int', 'variavel', '10'],
